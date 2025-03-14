@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import Sun from "./icons/Sun.vue"
 import Menu from "./icons/Menu.vue"
+
+import { ref } from 'vue'
+
+const isScrollY0 = ref(true)
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar" :class="{ navOntop: isScrollY0 }">
     <div class="content">
       <div class="logo">
         <h1>
@@ -12,10 +16,10 @@ import Menu from "./icons/Menu.vue"
         </h1>
       </div>
       <div class="menu">
-        <button class="theme">
+        <button class="theme" :class="{ navOntop: isScrollY0 }">
           <Sun />
         </button>
-        <button>
+        <button :class="{ navOntop: isScrollY0 }">
           <Menu />
         </button>
       </div>
@@ -24,10 +28,15 @@ import Menu from "./icons/Menu.vue"
 </template>
 
 <style scoped>
+.navOntop {
+  background-color: var(--primary-soft) !important;
+  color: var(--vt-black) !important;
+}
+
 .navbar {
   background-color: var(--vt-black-soft);
   width: 100%;
-  padding: 1rem 3.125rem;
+  padding: 0.5rem 3.125rem;
   position: sticky;
   display: flex;
   justify-content: center;
@@ -42,7 +51,7 @@ import Menu from "./icons/Menu.vue"
 }
 
 div.logo {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .menu {
@@ -73,13 +82,24 @@ button.theme:hover {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 829px) {
-  .navbar {
-    padding: 15px 20px;
-  }
+@media only screen and (max-width: 1400px) {
 
-  div.logo {
-    font-size: 16px;
+  .navbar {
+    padding: 0.5rem 8.5rem;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+
+  .navbar {
+    padding: 0.5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+
+  .navbar {
+    padding: 0.5rem 0.6rem;
   }
 }
 </style>

@@ -114,13 +114,8 @@ h2 {
 
 @media only screen and (max-width: 1400px) {
   .masthead {
-    background-color: var(--primary-soft);
-    color: var(--vt-black);
-    min-height: 100vh;
-    width: 100%;
     padding: 0px 8.5rem;
     padding-bottom: 10rem;
-    display: flex;
     justify-content: center;
   }
 
@@ -132,10 +127,6 @@ h2 {
 
 @media only screen and (max-width: 1198px) {
   .masthead {
-    background-color: var(--primary-soft);
-    color: var(--vt-black);
-    min-height: 100vh;
-    width: 100%;
     padding: 0px 8.5rem;
     padding-bottom: 10rem;
     display: flex;
@@ -169,10 +160,12 @@ h2 {
 
   h1 {
     text-align: center;
+    font-size: calc(1.5rem + 1vw);
   }
 
   h2 {
     text-align: center;
+    font-size: calc(3.150rem + 6.3vw);
   }
 
   .links {
