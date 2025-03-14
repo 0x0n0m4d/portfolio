@@ -24,16 +24,25 @@
 <style scoped>
 .masthead {
   width: 100%;
-  padding: 10px 20px;
-  display: absolute;
+  padding: 30px 50px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+div.logo {
+  font-family: 'ShortStack-Regular';
+  font-size: 20px;
+}
+
+div.menu {
+  font-family: 'Roboto';
 }
 
 .menu ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 0px 10px;
+  gap: 0px 2em;
 }
 </style>

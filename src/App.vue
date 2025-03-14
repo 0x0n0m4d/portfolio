@@ -8,8 +8,24 @@ import Masthead from './components/Masthead.vue'
   </header>
 
   <main>
-    O_o
+    ( ._.) 404: Error
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: var(--primary);
+}
+
+@font-face {
+  font-family: 'ShortStack-Regular';
+  src: url('~@/assets/fonts/ShortStack/ShortStack-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('~@/assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf');
+}
+</style>
