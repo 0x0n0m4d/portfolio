@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Navbar from './components/Navbar.vue'
+import Masthead from './components/Masthead.vue'
 </script>
 
 <template>
@@ -8,7 +9,7 @@ import Navbar from './components/Navbar.vue'
   </header>
 
   <main>
-    ( ._.) 404: Error
+    <Masthead />
   </main>
 </template>
 

@@ -27,7 +27,7 @@ import Menu from "./icons/Menu.vue"
 .navbar {
   background-color: var(--vt-black-soft);
   width: 100%;
-  padding: 10px 50px;
+  padding: 1rem 3.125rem;
   position: sticky;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ import Menu from "./icons/Menu.vue"
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1320px;
 }
 
 div.logo {
@@ -69,13 +69,13 @@ button.theme {
 }
 
 button.theme:hover {
-  color: var(--primary-hover);
+  color: var(--primary-soft);
   transition: 0.5s;
 }
 
 @media only screen and (max-width: 829px) {
   .navbar {
-    padding: 10px 20px;
+    padding: 15px 20px;
   }
 
   div.logo {
