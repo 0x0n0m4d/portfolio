@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Masthead from './components/Masthead.vue'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
   <header>
-    <Masthead />
+    <Navbar />
   </header>
 
   <main>
@@ -13,19 +13,12 @@ import Masthead from './components/Masthead.vue'
 </template>
 
 <style scoped>
-main {
-  font-family: 'Roboto';
-  font-weight: 600;
-  color: var(--primary);
+@font-face {
+  font-family: 'Poppins';
+  src: url('~@/assets/fonts/Poppins/Poppins-Regular.ttf');
 }
 
-@font-face {
-  font-family: 'ShortStack-Regular';
-  src: url('~@/assets/fonts/ShortStack/ShortStack-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('~@/assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf');
+* {
+  font-family: 'Poppins';
 }
 </style>

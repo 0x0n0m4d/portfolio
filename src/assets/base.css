@@ -7,27 +7,28 @@
   --vt-black-soft: #282828;
   --vt-black-mute: #3c3836;
 
-  --vt-primary: #458588;
-  --vt-primary-soft: #83a598;
-
-  --vt-secondary: #d79921;
-  --vt-secondary-soft: #fabd2f;
+  --vt-primary: #d79921;
+  --vt-primary-soft: #fabd2f;
 }
 
 /* semantic color variables for this project */
 :root {
   --color-background: var(--vt-white);
   --color-text: var(--vt-black);
+  --color-text-soft: var(--vt-black-soft);
+  --color-text-mute: var(--vt-black-mute);
   --primary: var(--vt-primary-soft);
-  --secondary: var(--vt-secondary-soft);
+  --primary-hover: var(--vt-primary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
   --color-background: var(--vt-black);
   --color-text: var(--vt-white);
+  --color-text-soft: var(--vt-white-soft);
+  --color-text-mute: var(--vt-white-mute);
   --primary: var(--vt-primary);
-  --secondary: var(--vt-secondary);
+  --primary-hover: var(--vt-primary-soft);
   }
 }
 
@@ -49,8 +50,7 @@ body {
     color 0.5s,
     background-color 0.5s;
   font-family:
-    'Roboto',
-    'ShortStack-Regular',
+    'Poppins',
     sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
