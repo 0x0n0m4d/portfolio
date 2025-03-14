@@ -32,7 +32,7 @@ import ChevronDown from "./icons/ChevronDown.vue"
 
 <style scoped>
 .masthead {
-  background-color: var(--primary-soft);
+  background-color: var(--vt-primary-soft);
   color: var(--vt-black);
   min-height: 100vh;
   width: 100%;

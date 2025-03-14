@@ -21,15 +21,13 @@
   --primary-soft: var(--vt-primary);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+[data-theme="dark"] {
   --color-background: var(--vt-black);
   --color-text: var(--vt-white);
   --color-text-soft: var(--vt-white-soft);
   --color-text-mute: var(--vt-white-mute);
   --primary: var(--vt-primary);
   --primary-soft: var(--vt-primary-soft);
-  }
 }
 
 *,

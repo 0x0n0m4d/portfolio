@@ -1,10 +1,22 @@
 <script setup lang="ts">
 import Sun from "./icons/Sun.vue"
+import Moon from "./icons/Moon.vue"
 import Menu from "./icons/Menu.vue"
 
 import { ref } from 'vue'
 
 const isScrollY0 = ref(true)
+const isDarkTheme = ref(localStorage.getItem('theme') === 'dark')
+
+const handleTheme = () => {
+  const theme = isDarkTheme.value ? 'dark' : 'light'
+
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+
+  isDarkTheme.value = !isDarkTheme.value
+}
+
 </script>
 
 <template>
@@ -16,8 +28,11 @@ const isScrollY0 = ref(true)
         </h1>
       </div>
       <div class="menu">
-        <button class="theme" :class="{ navOntop: isScrollY0 }">
+        <button v-show="!isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
           <Sun />
+        </button>
+        <button v-show="isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
+          <Moon />
         </button>
         <button :class="{ navOntop: isScrollY0 }">
           <Menu />
@@ -29,7 +44,7 @@ const isScrollY0 = ref(true)
 
 <style scoped>
 .navOntop {
-  background-color: var(--primary-soft) !important;
+  background-color: var(--vt-primary-soft) !important;
   color: var(--vt-black) !important;
 }
 
