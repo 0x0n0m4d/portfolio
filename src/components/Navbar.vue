@@ -2,11 +2,13 @@
 import Sun from "./icons/Sun.vue"
 import Moon from "./icons/Moon.vue"
 import Menu from "./icons/Menu.vue"
+import ModalMenu from "./ModalMenu.vue"
 
 import { ref } from 'vue'
 
 const isScrollY0 = ref(true)
 const isDarkTheme = ref(localStorage.getItem('theme') === 'dark')
+const showModal = ref(false)
 
 const handleTheme = () => {
   const theme = isDarkTheme.value ? 'dark' : 'light'
@@ -15,6 +17,10 @@ const handleTheme = () => {
   localStorage.setItem('theme', theme);
 
   isDarkTheme.value = !isDarkTheme.value
+}
+
+const openModal = () => {
+  showModal.value = true;
 }
 
 </script>
@@ -34,12 +40,15 @@ const handleTheme = () => {
         <button v-show="isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
           <Moon />
         </button>
-        <button :class="{ navOntop: isScrollY0 }">
+        <button :class="{ navOntop: isScrollY0 }" @click="openModal">
           <Menu />
         </button>
       </div>
     </div>
   </nav>
+  <Teleport to="body">
+    <ModalMenu :show="showModal" @close="showModal = false" />
+  </Teleport>
 </template>
 
 <style scoped>
@@ -51,7 +60,7 @@ const handleTheme = () => {
 .navbar {
   background-color: var(--vt-black-soft);
   width: 100%;
-  padding: 0.5rem 3.125rem;
+  padding: 0.8rem 3.125rem;
   position: sticky;
   display: flex;
   justify-content: center;
@@ -65,8 +74,9 @@ const handleTheme = () => {
   max-width: 1320px;
 }
 
-div.logo {
-  font-size: 14px;
+.logo h1 {
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .menu {
