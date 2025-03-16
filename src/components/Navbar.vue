@@ -26,7 +26,7 @@ const openModal = () => {
 </script>
 
 <template>
-  <nav class="navbar" :class="{ navOntop: isScrollY0 }">
+  <nav :class="{ navbar: true, navOntop: isScrollY0 }">
     <div class="content">
       <div class="logo">
         <h1>

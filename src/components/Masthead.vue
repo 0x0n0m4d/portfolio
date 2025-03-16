@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import WorkWriter from "./WorkWriter.vue"
 import ChevronDown from "./icons/ChevronDown.vue"
 </script>
 
@@ -10,9 +11,7 @@ import ChevronDown from "./icons/ChevronDown.vue"
           HI, I'M A FREELANCER
           <b />
         </h1>
-        <h2>
-          HACKER
-        </h2>
+        <WorkWriter />
         <div class="links">
           <a class="portfolio" href="#portfolio">
             View My Works
@@ -56,14 +55,6 @@ h1 {
   font-weight: 100;
   font-size: 2rem;
   width: max-content;
-}
-
-h2 {
-  color: var(--vt-black-soft);
-  font-weight: 600;
-  font-size: 5rem;
-  line-height: 1.3;
-  margin-left: -.25rem !important;
 }
 
 .links {
@@ -143,9 +134,8 @@ h2 {
     font-size: calc(1.775rem + 6.3vw);
   }
 
-  .profile img {
-    max-width: calc(18.125rem + 6.3vw);
-    max-height: calc(18.125rem + 6.3vw);
+  .profile {
+    display: none;
   }
 }
 
@@ -155,6 +145,13 @@ h2 {
   }
 
   .container {
+    justify-content: center;
+  }
+
+  .greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 
@@ -170,10 +167,6 @@ h2 {
 
   .links {
     justify-content: center;
-  }
-
-  .profile {
-    display: none;
   }
 }
 
