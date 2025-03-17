@@ -4,28 +4,31 @@ import Moon from "./icons/Moon.vue"
 import Menu from "./icons/Menu.vue"
 import ModalMenu from "./ModalMenu.vue"
 
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import useTheme from "@/hooks/useTheme"
 
+const { initTheme, toggleTheme } = useTheme();
 const isScrollY0 = ref(true);
-const isDarkTheme = ref(localStorage.getItem('theme') === 'dark')
+const isDarkTheme = ref(false)
 const showModal = ref(false)
-
-const handleTheme = () => {
-  const theme = isDarkTheme.value ? 'dark' : 'light'
-
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-
-  isDarkTheme.value = !isDarkTheme.value
-}
 
 const openModal = () => {
   showModal.value = true;
 }
 
+const handleTheme = () => {
+  const theme = toggleTheme()
+  isDarkTheme.value = theme === "dark"
+}
+
 window.addEventListener("scroll", (event) => {
   isScrollY0.value = window.scrollY === 0;
 });
+
+onMounted(() => {
+  initTheme();
+  isDarkTheme.value = document.documentElement.dataset.theme === 'dark'
+})
 </script>
 
 <template>
@@ -37,10 +40,10 @@ window.addEventListener("scroll", (event) => {
         </h1>
       </div>
       <div class="menu">
-        <button v-show="!isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
+        <button v-show="isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
           <Sun />
         </button>
-        <button v-show="isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
+        <button v-show="!isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
           <Moon />
         </button>
         <button :class="{ navOntop: isScrollY0 }" @click="openModal">
