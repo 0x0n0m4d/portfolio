@@ -6,7 +6,7 @@ import ModalMenu from "./ModalMenu.vue"
 
 import { ref } from 'vue'
 
-const isScrollY0 = ref(true)
+const isScrollY0 = ref(true);
 const isDarkTheme = ref(localStorage.getItem('theme') === 'dark')
 const showModal = ref(false)
 
@@ -23,6 +23,9 @@ const openModal = () => {
   showModal.value = true;
 }
 
+window.addEventListener("scroll", (event) => {
+  isScrollY0.value = window.scrollY === 0;
+});
 </script>
 
 <template>
@@ -58,12 +61,15 @@ const openModal = () => {
 }
 
 .navbar {
-  background-color: var(--vt-black-soft);
+  background-color: var(--color-background);
   width: 100%;
   padding: 0.8rem 3.125rem;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 .content {
