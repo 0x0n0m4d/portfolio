@@ -118,8 +118,6 @@ h1 {
 
 @media only screen and (max-width: 1198px) {
   .masthead {
-    padding: 0px 8.5rem;
-    padding-bottom: 10rem;
     display: flex;
     justify-content: center;
   }
