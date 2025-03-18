@@ -35,8 +35,7 @@ import ChevronDown from "./icons/ChevronDown.vue"
   color: var(--vt-black);
   min-height: 100vh;
   width: 100%;
-  padding: 0px 3.125rem;
-  padding-bottom: 10rem;
+  padding: 10rem 3.125rem;
   display: flex;
   justify-content: center;
 }
@@ -52,8 +51,8 @@ import ChevronDown from "./icons/ChevronDown.vue"
 
 h1 {
   color: var(--vt-black-mute);
-  font-weight: 100;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
   width: max-content;
 }
 
@@ -68,7 +67,7 @@ h1 {
   text-decoration: none;
   padding: 0.8rem 2rem;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .links .portfolio {

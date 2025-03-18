@@ -93,7 +93,7 @@ const footData = {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .presentation {
@@ -103,8 +103,8 @@ const footData = {
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 2.3rem;
+  font-weight: 600;
   color: var(--color-text);
 }
 
@@ -117,11 +117,12 @@ h3 {
 .highlight {
   border-bottom: solid 1px;
   border-color: var(--primary);
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .about {
-  font-size: 1.3125rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
 .experience {
@@ -143,13 +144,11 @@ h3 {
 
 .years span {
   font-size: 9rem;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 0;
   line-height: 0;
   text-align: center;
   color: var(--color-text-soft);
-  margin-bottom: -1.5rem !important;
-  margin-left: -1rem !important;
 }
 
 .experience .text {

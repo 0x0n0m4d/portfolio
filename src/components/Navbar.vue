@@ -58,6 +58,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
+* {
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
 .navOntop {
   background-color: var(--vt-primary-soft) !important;
   color: var(--vt-black) !important;
@@ -85,7 +90,7 @@ onMounted(() => {
 
 .logo h1 {
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .menu {

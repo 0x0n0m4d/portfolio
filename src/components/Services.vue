@@ -51,6 +51,11 @@ const components = [
 </template>
 
 <style scoped>
+* {
+  transition: background-color 0.1s;
+  transition: color 0.5s;
+}
+
 .services {
   width: 100%;
   background-color: var(--color-background-soft);
@@ -81,8 +86,8 @@ const components = [
 
 h2 {
   width: max-content;
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 2.3rem;
+  font-weight: 600;
   color: var(--color-text);
 }
 

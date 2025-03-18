@@ -34,6 +34,11 @@ const props = defineProps({
                 </a>
               </li>
               <li>
+                <a href="#resume">
+                  Resume
+                </a>
+              </li>
+              <li>
                 <a href="#portfolio">
                   Portfolio
                 </a>

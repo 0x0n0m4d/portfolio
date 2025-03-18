@@ -43,7 +43,7 @@ setTimeout(type, 100);
 <template>
   <h2>
     {{ typeValue }}
-    <div :class="{ caret: true, blink: !typeStatus }" />
+    <div :class="{ blink: !typeStatus }">|</div>
   </h2>
 </template>
 
@@ -57,14 +57,6 @@ h2 {
   font-size: 5rem;
   line-height: 1.3;
   margin-left: -.25rem !important;
-}
-
-.caret {
-  height: 70px;
-  width: 12px;
-  background-color: var(--vt-black-soft);
-  margin-top: -.7rem !important;
-  margin-left: 0.5rem !important;
 }
 
 @keyframes blink_cursor {
@@ -83,17 +75,5 @@ h2 {
 
 .blink {
   animation: blink_cursor 0.7s infinite;
-}
-
-@media only screen and (max-width: 1198px) {
-  .caret {
-    height: calc(1rem + 6.3vw);
-  }
-}
-
-@media only screen and (max-width: 993px) {
-  .caret {
-    height: calc(2rem + 6.3vw);
-  }
 }
 </style>
