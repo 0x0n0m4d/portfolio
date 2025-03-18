@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue'
 import Masthead from './components/Masthead.vue'
 import AboutMe from './components/AboutMe.vue'
+import Services from './components/Services.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import AboutMe from './components/AboutMe.vue'
   <main>
     <Masthead />
     <AboutMe />
+    <Services />
   </main>
 </template>
 
@@ -22,6 +24,7 @@ import AboutMe from './components/AboutMe.vue'
 }
 
 * {
+  overflow-x: hidden;
   font-family: 'Poppins';
 }
 </style>
