@@ -4,6 +4,7 @@ import Masthead from './components/Masthead.vue'
 import AboutMe from './components/AboutMe.vue'
 import Services from './components/Services.vue'
 import Resume from './components/Resume.vue'
+import ContactMe from './components/ContactMe.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Resume from './components/Resume.vue'
     <AboutMe />
     <Services />
     <Resume />
+    <ContactMe />
   </main>
 </template>
 

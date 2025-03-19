@@ -39,8 +39,8 @@ const props = defineProps({
                 </a>
               </li>
               <li>
-                <a href="#portfolio">
-                  Portfolio
+                <a href="#contact">
+                  Contact Me
                 </a>
               </li>
             </ul>
