@@ -23,7 +23,7 @@ import ChevronDown from "./icons/ChevronDown.vue"
         </div>
       </div>
       <div class="profile">
-        <img width="540px" height="540px" src="@/assets/profile.png" />
+        <img width="540px" height="540px" src="@/assets/profile.jpg" />
       </div>
     </div>
   </section>
