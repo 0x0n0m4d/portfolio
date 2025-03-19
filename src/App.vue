@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe.vue'
 import Services from './components/Services.vue'
 import Resume from './components/Resume.vue'
 import ContactMe from './components/ContactMe.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import ContactMe from './components/ContactMe.vue'
     <Services />
     <Resume />
     <ContactMe />
+    <Footer />
   </main>
 </template>
 
