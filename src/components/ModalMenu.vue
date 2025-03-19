@@ -164,26 +164,47 @@ const props = defineProps({
 }
 
 .modal-footer a {
+  width: 32px;
+  height: 32px;
   color: var(--vt-white-mute);
   text-decoration: none;
 }
 
+.modal-footer a.htb {
+  width: 38px;
+  height: 38px;
+}
+
 .modal-footer a.git:hover {
+  width: 38px;
+  height: 38px;
   color: #3c3836;
   transition: 0.5s
 }
 
+.modal-footer a.code4:hover {
+  width: 38px;
+  height: 38px;
+  transition: 0.5s
+}
+
 .modal-footer a.pph:hover {
+  width: 38px;
+  height: 38px;
   color: #aa1d18;
   transition: 0.5s
 }
 
 .modal-footer a.thm:hover {
+  width: 38px;
+  height: 38px;
   color: var(--vt-white);
   transition: 0.5s
 }
 
 .modal-footer a.htb:hover {
+  width: 42px;
+  height: 42px;
   color: #b8bb26;
   transition: 0.5s
 }

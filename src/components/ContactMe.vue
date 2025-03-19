@@ -57,10 +57,14 @@ p {
 }
 
 a {
+  width: 48px;
+  height: 48px;
   color: var(--vt-black);
 }
 
 a:hover {
+  width: 52px;
+  height: 52px;
   color: #aa1d18;
   transition: 0.5s
 }

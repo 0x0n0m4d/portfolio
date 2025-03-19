@@ -1,6 +1,6 @@
 <template>
   <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Tryhackme--Streamline-Simple-Icons"
-    height="32" width="32">
+    height="100%" width="100%">
     <desc>Tryhackme Streamline Icon: https://streamlinehq.com</desc>
     <title>TryHackMe</title>
     <path
