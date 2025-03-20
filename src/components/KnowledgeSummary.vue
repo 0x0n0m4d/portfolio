@@ -1,14 +1,15 @@
-<script setup lang="js">
-const props = defineProps({
+<script setup lang="ts">
+defineProps<{
   title: String,
-  knowledge: [{
+  knowledge: {
     title: String,
     company: String | null,
     years: String,
     description: String,
-  }]
-})
+  }[]
+}>()
 </script>
+
 <template>
   <div class="summary">
     <h2>

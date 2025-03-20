@@ -14,11 +14,14 @@ const section = ref(window.location.href.split("/#")[1])
 console.log(section.value)
 
 watch(section, () => {
-  window.scrollTo({
-    top: document.getElementById(section.value).offsetTop,
-    left: 0,
-    behavior: "smooth"
-  });
+  const el = document.getElementById(section.value)
+  if (el) {
+    window.scrollTo({
+      top: el.offsetTop,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
 })
 </script>
 
