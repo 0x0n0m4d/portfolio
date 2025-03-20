@@ -21,6 +21,14 @@ const handleTheme = () => {
   isDarkTheme.value = theme === "dark"
 }
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+}
+
 window.addEventListener("scroll", (event) => {
   isScrollY0.value = window.scrollY === 0;
 });
@@ -34,11 +42,11 @@ onMounted(() => {
 <template>
   <nav :class="{ navbar: true, navOntop: isScrollY0 }">
     <div class="content">
-      <div class="logo">
+      <button :class="{ logo: true, navOntop: isScrollY0 }" @click="scrollToTop">
         <h1>
           LUCAS
         </h1>
-      </div>
+      </button>
       <div class="menu">
         <button v-show="isDarkTheme" class="theme" :class="{ navOntop: isScrollY0 }" @click="handleTheme">
           <Sun />
@@ -86,6 +94,13 @@ onMounted(() => {
   justify-content: space-between;
   width: 100%;
   max-width: 1320px;
+}
+
+.logo {
+  border: none;
+  background-color: transparent;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 .logo h1 {

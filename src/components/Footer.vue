@@ -12,19 +12,20 @@ import HTB from "./icons/HTB.vue"
       Copyright &#169; 2025 <a href="#home" class="home">Lucas</a>. All Rights Reserved.
     </div>
     <div class="row_icons">
-      <a href="#github" class="git">
+      <a href="https://github.com/0x0n0m4d/" target="_blank" class="git">
         <Github />
       </a>
-      <a href="#code4rena" class="code4">
+      <a href="https://code4rena.com/@th3l1ghtd3m0n" target="_blank" class="code4">
         <Code4 />
       </a>
-      <a href="#peopleperhour" class="pph">
+      <a href="https://www.peopleperhour.com/freelancer/technology-programming/lucas-rodrigues-white-hacker-web-developer-zyzjzmjz"
+        target="_blank" class="pph">
         <PeoplePerHour />
       </a>
       <a href="#TryHackMe" class="thm">
         <THM />
       </a>
-      <a href="#HackTheBox" class="htb">
+      <a href="https://app.hackthebox.com/profile/1287442" target="_blank" class="htb">
         <HTB />
       </a>
     </div>

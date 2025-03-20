@@ -2,7 +2,7 @@
 import PeoplePerHour from "./icons/PeoplePerHour.vue"
 </script>
 <template>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2>
         Let's get in touch
@@ -15,7 +15,8 @@ import PeoplePerHour from "./icons/PeoplePerHour.vue"
         You can contact me through the freelance platforms I am registered on.
       </p>
       <div class="icons">
-        <a href="#peopleperhour">
+        <a href="https://www.peopleperhour.com/freelancer/technology-programming/lucas-rodrigues-white-hacker-web-developer-zyzjzmjz"
+          target="_blank">
           <PeoplePerHour />
         </a>
       </div>

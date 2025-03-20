@@ -19,27 +19,27 @@ const props = defineProps({
           <slot name="body">
             <ul>
               <li>
-                <a href="#home" class="home">
+                <a href="#home" class="home" @click="$emit('close')">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about">
+                <a href="#about" @click="$emit('close')">
                   About Me
                 </a>
               </li>
               <li>
-                <a href="#services">
+                <a href="#services" @click="$emit('close')">
                   What I Do
                 </a>
               </li>
               <li>
-                <a href="#resume">
+                <a href="#resume" @click="$emit('close')">
                   Resume
                 </a>
               </li>
               <li>
-                <a href="#contact">
+                <a href="#contact" @click="$emit('close')">
                   Contact Me
                 </a>
               </li>
@@ -48,19 +48,20 @@ const props = defineProps({
         </div>
         <div class="modal-footer">
           <slot name="footer">
-            <a href="#github" class="git">
+            <a href="https://github.com/0x0n0m4d/" target="_blank" class="git">
               <Github />
             </a>
-            <a href="#code4rena" class="code4">
+            <a href="https://code4rena.com/@th3l1ghtd3m0n" target="_blank" class="code4">
               <Code4 />
             </a>
-            <a href="#peopleperhour" class="pph">
+            <a href="https://www.peopleperhour.com/freelancer/technology-programming/lucas-rodrigues-white-hacker-web-developer-zyzjzmjz"
+              target="_blank" class="pph">
               <PeoplePerHour />
             </a>
             <a href="#TryHackMe" class="thm">
               <THM />
             </a>
-            <a href="#HackTheBox" class="htb">
+            <a href="https://app.hackthebox.com/profile/1287442" target="_blank" class="htb">
               <HTB />
             </a>
           </slot>
@@ -156,7 +157,7 @@ const props = defineProps({
 .modal-footer {
   width: 100%;
   display: flex;
-  gap: 0px 2rem;
+  gap: 0px 1rem;
   align-items: center;
   justify-content: center;
   animation-name: footer;

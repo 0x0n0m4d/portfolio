@@ -4,7 +4,7 @@ import ChevronDown from "./icons/ChevronDown.vue"
 </script>
 
 <template>
-  <section class="masthead">
+  <section class="masthead" id="home">
     <div class="container">
       <div class="greetings">
         <h1>
@@ -13,7 +13,7 @@ import ChevronDown from "./icons/ChevronDown.vue"
         </h1>
         <WorkWriter />
         <div class="links">
-          <a class="portfolio" href="#portfolio">
+          <a class="portfolio" href="https://github.com/0x0n0m4d/" target="_blank">
             View My Works
           </a>
           <a class="contact" href="#contact">

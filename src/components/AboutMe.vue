@@ -8,7 +8,7 @@ const footData = {
 </script>
 
 <template>
-  <section class="about_me">
+  <section class="about_me" id="about">
     <div class="mark">
       About Me
     </div>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue';
+
 import Navbar from './components/Navbar.vue'
 import Masthead from './components/Masthead.vue'
 import AboutMe from './components/AboutMe.vue'
@@ -6,6 +8,18 @@ import Services from './components/Services.vue'
 import Resume from './components/Resume.vue'
 import ContactMe from './components/ContactMe.vue'
 import Footer from './components/Footer.vue'
+
+const section = ref(window.location.href.split("/#")[1])
+
+console.log(section.value)
+
+watch(section, () => {
+  window.scrollTo({
+    top: document.getElementById(section.value).offsetTop,
+    left: 0,
+    behavior: "smooth"
+  });
+})
 </script>
 
 <template>

@@ -51,7 +51,7 @@ const experience = [
 </script>
 
 <template>
-  <section class="resume">
+  <section class="resume" id="resume">
     <div class="mark">
       Resume
     </div>

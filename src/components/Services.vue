@@ -31,7 +31,7 @@ const components = [
 </script>
 
 <template>
-  <section class="services">
+  <section class="services" id="services">
     <div class="mark">
       Services
     </div>
