@@ -1,18 +1,9 @@
 # Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+My portfolio is a modern, responsive, and dynamic web application built using Vue.js. Leveraging Vue's component-based architecture, the site offers a seamless and interactive user experience. The project showcases my skills, projects, and professional journey in a clean and visually appealing manner.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+[Visit My Portfolio](https://0x0n0m4d.github.io/portfolio/)
+![thumb](./assets/thumb.png)
 
 ## Project Setup
 
@@ -32,8 +23,6 @@ yarn dev
 yarn build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Stack
 
-```sh
-yarn lint
-```
+- [Vue.js](https://vuejs.org/)
