@@ -194,6 +194,8 @@ const props = defineProps({
 }
 
 .modal-default-button {
+  width: 28px;
+  height: 28px;
   display: flex;
   position: absolute;
   background-color: transparent;
@@ -222,6 +224,18 @@ const props = defineProps({
   .modal-footer a:hover {
     width: 26px;
     height: 26px;
+  }
+
+  .modal-default-button {
+    width: 24px;
+    height: 24px;
+    right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .modal-default-button {
+    right: 2rem;
   }
 }
 </style>
