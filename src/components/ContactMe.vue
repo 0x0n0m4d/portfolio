@@ -69,4 +69,24 @@ a:hover {
   color: #aa1d18;
   transition: 0.5s
 }
+
+@media only screen and (max-width: 577px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    width: 42px;
+    height: 42px;
+  }
+
+  a:hover {
+    width: 48px;
+    height: 48px;
+  }
+}
 </style>

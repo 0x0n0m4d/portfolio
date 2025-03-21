@@ -66,48 +66,47 @@ a {
   text-decoration: none;
 }
 
-a.htb {
-  width: 28px;
-  height: 28px;
-}
-
-a.code4:hover {
+a:hover {
   width: 28px;
   height: 28px;
   transition: 0.5s;
 }
 
 a.git:hover {
-  width: 28px;
-  height: 28px;
   color: #3c3836;
-  transition: 0.5s
 }
 
 a.pph:hover {
-  width: 28px;
-  height: 28px;
   color: #aa1d18;
-  transition: 0.5s
 }
 
 a.thm:hover {
-  width: 28px;
-  height: 28px;
   color: var(--vt-white);
-  transition: 0.5s
 }
 
 a.htb:hover {
-  width: 32px;
-  height: 32px;
   color: #b8bb26;
-  transition: 0.5s
 }
 
 @media only screen and (max-width: 815px) {
   footer {
     padding: 2rem 3.125rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .copy {
+    font-size: 0.5rem;
+  }
+
+  a {
+    width: 20px;
+    height: 20px;
+  }
+
+  a:hover {
+    width: 22px;
+    height: 22px;
   }
 }
 </style>

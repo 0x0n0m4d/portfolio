@@ -89,4 +89,32 @@ h3 {
     max-width: 530px;
   }
 }
+
+@media only screen and (max-width: 993px) {
+  .content {
+    min-height: max-content;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .summary {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .card>div {
+    font-size: 0.8rem;
+  }
+
+  .card>p {
+    font-size: 0.8rem;
+  }
+}
 </style>

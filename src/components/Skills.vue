@@ -125,4 +125,15 @@ p {
     min-width: 100%;
   }
 }
+
+@media only screen and (max-width: 577px) {
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
 </style>

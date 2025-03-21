@@ -124,6 +124,10 @@ h2 {
 }
 
 @media only screen and (max-width: 993px) {
+  .services {
+    padding: 4rem 3.125rem;
+  }
+
   h2 {
     font-size: calc(1.175rem + 1.3vw);
   }
@@ -132,6 +136,16 @@ h2 {
 @media only screen and (max-width: 815px) {
   .box>div {
     grid-template-columns: max-content;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .services {
+    padding: 4rem 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
   }
 }
 </style>

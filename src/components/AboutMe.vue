@@ -151,13 +151,10 @@ h3 {
   color: var(--color-text-soft);
 }
 
-.experience .text {
+.text {
+  width: max-content;
   margin-top: 2rem;
   font-size: 1.75rem;
-}
-
-.text {
-  min-width: max-content;
 }
 
 b {
@@ -209,6 +206,10 @@ li {
 }
 
 @media only screen and (max-width: 993px) {
+  .about_me {
+    padding: 4rem 3.125rem;
+  }
+
   .presentation {
     justify-content: center;
     align-items: center;
@@ -225,20 +226,39 @@ li {
     justify-content: center;
   }
 
-  ul {
-    width: 100%;
-    display: inline-grid;
-    grid-template-columns: max-content max-content;
-    gap: 1rem 0rem;
-    align-items: center;
-  }
-
   .key {
     font-size: 10px;
   }
 
   .value {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .about {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .key {
+    font-size: 7px;
+  }
+
+  .value {
+    font-size: 10px;
   }
 }
 </style>

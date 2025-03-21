@@ -114,6 +114,8 @@ onMounted(() => {
 }
 
 .menu button {
+  width: 32px;
+  height: 32px;
   outline: none;
   border: none;
   text-decoration: none;
@@ -151,9 +153,17 @@ button.theme:hover {
 }
 
 @media only screen and (max-width: 577px) {
-
   .navbar {
-    padding: 0.5rem 0.6rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .menu button {
+    width: 28px;
+    height: 28px;
   }
 }
 </style>

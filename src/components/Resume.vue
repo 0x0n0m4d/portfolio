@@ -128,10 +128,23 @@ h2 {
 }
 
 @media only screen and (max-width: 993px) {
+  .resume {
+    padding: 4rem 4.5rem;
+  }
+
   .summary {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  h2 {
+    width: max-content;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-text);
   }
 }
 </style>

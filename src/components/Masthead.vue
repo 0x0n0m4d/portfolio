@@ -104,8 +104,7 @@ h1 {
 
 @media only screen and (max-width: 1400px) {
   .masthead {
-    padding: 0px 8.5rem;
-    padding-bottom: 10rem;
+    padding: 10rem 8.5rem;
     justify-content: center;
   }
 
@@ -138,6 +137,7 @@ h1 {
 
 @media only screen and (max-width: 993px) {
   .masthead {
+    padding: 10rem 3.125rem;
     margin-bottom: 3rem;
   }
 
@@ -164,6 +164,16 @@ h1 {
 
   .links {
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 }
 
