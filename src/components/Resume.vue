@@ -129,7 +129,7 @@ h2 {
 
 @media only screen and (max-width: 993px) {
   .resume {
-    padding: 4rem 4.5rem;
+    padding: 4rem 3.125rem;
   }
 
   .summary {
@@ -140,6 +140,10 @@ h2 {
 }
 
 @media only screen and (max-width: 577px) {
+  .resume {
+    padding: 4rem 2rem;
+  }
+
   h2 {
     width: max-content;
     font-size: 1.3rem;

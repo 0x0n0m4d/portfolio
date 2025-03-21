@@ -177,7 +177,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 396px) {
+@media only screen and (max-width: 435px) {
   .links {
     flex-direction: column;
     align-items: center;

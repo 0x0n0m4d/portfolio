@@ -261,4 +261,27 @@ li {
     font-size: 10px;
   }
 }
+
+@media only screen and (max-width: 435px) {
+  .about_me {
+    padding: 4rem 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .about {
+    font-size: 0.8rem;
+    line-height: 1.8;
+  }
+
+  .key {
+    font-size: 5px;
+  }
+
+  .value {
+    font-size: 8px;
+  }
+}
 </style>

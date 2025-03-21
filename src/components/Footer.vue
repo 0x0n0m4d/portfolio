@@ -99,6 +99,10 @@ a.htb:hover {
     font-size: 0.5rem;
   }
 
+  .row_icons {
+    gap: 0 0.8rem;
+  }
+
   a {
     width: 20px;
     height: 20px;
@@ -107,6 +111,26 @@ a.htb:hover {
   a:hover {
     width: 22px;
     height: 22px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .copy {
+    font-size: 0.4315rem;
+  }
+
+  .row_icons {
+    gap: 0 0.5rem;
+  }
+
+  a {
+    width: 15px;
+    height: 20px;
+  }
+
+  a:hover {
+    width: 17px;
+    height: 17px;
   }
 }
 </style>
